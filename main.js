@@ -1,5 +1,5 @@
 /**
- * 腾讯消息通知
+ * 腾讯站内信消息管理
  */
 const { app, BrowserWindow,ipcMain } = require('electron');
 const { switchAccountAndLogin,loginToTencentCloud } = require('./module')
@@ -9,8 +9,8 @@ const path = require('path');
 function createWindow() {
     // 创建浏览器窗口
     const mainWindow = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 400,
+        height: 200,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'), // 你可以在这里添加预加载脚本
         },
@@ -20,7 +20,7 @@ function createWindow() {
     mainWindow.loadFile('index.html');
 
     // 打开开发者工具（可选）
-    mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {
