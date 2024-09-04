@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯云辅助工具</title>
+</head>
+<body>
+    <h1>操作</h1>
+    <button id="loginButton">扫码登录</button>
+    &nbsp;
+    <button id="infoButton">获取信息</button>
+
+    <script>
+        document.getElementById('loginButton').addEventListener('click', () => {
+            window.myAPI.invokeMethod();
+        });
+        document.getElementById('infoButton').addEventListener('click', () => {
+            window.myAPI.invokeMethod2();
+        });
+    </script>
+</body>
+</html>

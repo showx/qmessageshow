@@ -1,0 +1,12 @@
+{
+  "name": "qmessageshow",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^32.0.1",
+    "puppeteer": "^23.2.1"
+  }
+}
